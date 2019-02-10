@@ -9,8 +9,9 @@ lazy val root = (project in file("."))
   .settings(
     name := "dbelise",
     libraryDependencies ++= Seq(
+      "org.scala-lang" % "scala-reflect" % "2.12.8",
       scalaTest % Test,
-      "org.hsqldb" % "hsqldb" % "2.4.1" % Test
+      "org.hsqldb" % "hsqldb" % "2.4.1" % Test,
     )
   )
 
